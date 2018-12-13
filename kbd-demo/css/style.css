@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+}
+main {
+  text-align: center;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+header div.topNavBar {
+  height: 90px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  margin-bottom: 126px;
+}
+header div.topNavBar .logo {
+  float: left;
+  margin: 10px 0 0 200px;
+}
+header div.topNavBar .search {
+  float: right;
+  width: 380px;
+  height: 28px;
+  padding-top: 30px;
+  margin-right: 160px;
+}
+header .topNavBar .search input {
+  height: 28px;
+  color: #eee;
+  vertical-align: middle;
+  border-radius: 3px;
+  background-color: #777;
+}
+header div.topNavBar .search input#shuru {
+  border: none;
+  padding-left: 30px;
+  width: 200px;
+}
+header div.topNavBar .search input#baidu,
+header div.topNavBar .search input#google {
+  border: 1px solid white;
+  width: 60px;
+  cursor: pointer;
+}
+main div#keyboard {
+  display: inline-block;
+}
+main div#keyboard kbd {
+  border-radius: 5px;
+  color: #999;
+  text-transform: capitalize;
+  width: 3em;
+  height: 3em;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0.5em 0.5em;
+  /*background: -webkit-radial-gradient(
+    center,
+    ellipse cover,
+    #ffffff 16%,
+    #f6f6f6 75%,
+    #ededed 100%)*/
+  background: #272822;
+  box-shadow: inset 0 0 2em rgba(0, 0, 0, 0.05), 0 3px 0 #a5a59f,
+    0 3px 2px rgba(0, 0, 0, 0.5);
+  position: relative;
+  cursor: default;
+}
+main div#keyboard kbd:hover{
+  box-shadow: 0px 0px 50px 15px rgba(255,255,255,0.75);
+}
+main div#keyboard kbd button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: none;
+  cursor: pointer;
+  border-radius: 3px;
+  background: #8b9091;
+}
+main div#keyboard kbd:hover button {
+  display: inline-block;
+}
+footer div.introduce {
+  height: 60px;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  cursor: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: default;
+}
+footer div.introduce h1#introtittle {
+  font-size: 12px;
+  margin: 7px 0;
+}
+footer div.introduce span#introtext {
+  font-size: 12px;
+  margin: 5px 0;
+}
+/*main div#daohang div:nth-child(3) {
+  margin-left: 2em;
+}
+main div#daohang div:nth-child(4) {
+  margin-left: 6em;
+}*/
