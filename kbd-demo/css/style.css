@@ -6,8 +6,9 @@ a {
   text-decoration: none;
 }
 body {
-  background-image: url("../img/background.jpg");
-  background-repeat: no-repeat;
+  background: url("../img/background.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
 }
 main {
   text-align: center;
@@ -21,7 +22,7 @@ header div.topNavBar {
   height: 90px;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
-  margin-bottom: 126px;
+  margin-bottom: 95px;
 }
 header div.topNavBar .logo {
   float: left;
@@ -54,39 +55,62 @@ header div.topNavBar .search input#google {
 }
 main div#keyboard {
   display: inline-block;
+  padding: 10px 10px;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
 }
 main div#keyboard kbd {
   border-radius: 5px;
   color: #999;
   text-transform: capitalize;
-  width: 3em;
-  height: 3em;
+  width: 50px;
+  height: 45px;
   display: inline-block;
+  font-family: "Helvetica";
   font-size: 16px;
-  margin: 0.5em 0.5em;
+  margin: 10px 10px;
   /*background: -webkit-radial-gradient(
     center,
     ellipse cover,
     #ffffff 16%,
     #f6f6f6 75%,
     #ededed 100%)*/
-  background: #272822;
-  box-shadow: inset 0 0 2em rgba(0, 0, 0, 0.05), 0 3px 0 #a5a59f,
+  /*background: #272822;*/
+  /*box-shadow: inset 0 0 2em rgba(0, 0, 0, 0.05), 0 3px 0 #a5a59f,
     0 3px 2px rgba(0, 0, 0, 0.5);
+  border: 1px solid #f2f2f2;*/
+  background: #111111;
+  box-shadow: 0px 2px 12px 2px rgba(242, 242, 242, 1),
+    inset 4px -4px 3px -1px rgba(74, 74, 74, 1);
+  /*inset 0px 0px 15px 10px rgba(26, 26, 26, 1),*/
   position: relative;
   cursor: default;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
-main div#keyboard kbd:hover{
-  box-shadow: 0px 0px 50px 15px rgba(255,255,255,0.75);
+main div#keyboard kbd:hover {
+  box-shadow: 0px 0px 50px 15px rgba(255, 255, 255, 0.75);
 }
 main div#keyboard kbd button {
   position: absolute;
   bottom: 0;
   right: 0;
+  height: 15px;
+  width: 15px;
   display: none;
   cursor: pointer;
   border-radius: 3px;
   background: #8b9091;
+  font-size: 12px;
+  line-height: 12px;
+}
+main div#keyboard kbd img{
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
 }
 main div#keyboard kbd:hover button {
   display: inline-block;
@@ -99,6 +123,7 @@ footer div.introduce {
   position: fixed;
   bottom: 0;
   cursor: auto;
+  color: #603210;
   background-color: rgba(0, 0, 0, 0.5);
   cursor: default;
 }
