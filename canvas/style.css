@@ -18,6 +18,10 @@ li {
   list-style: none;
 }
 
+canvas {
+  display: block;
+}
+
 .clearfix::after {
   content: "";
   display: block;
@@ -113,7 +117,7 @@ li {
 }
 .actions ol.weightPicks li.active {
   transform: scale(1.1);
-  box-shadow: 0 0 5px rgba(8, 8, 8, 1)
+  box-shadow: 0 0 5px rgba(8, 8, 8, 1);
 }
 .actions ol.weightPicks li:nth-child(1) {
   border-left: 1px solid;
