@@ -1,0 +1,132 @@
+#xxx {
+  background: white;
+  display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0px;
+  overflow: hidden; /*禁止滚动条*/
+}
+
+ol,
+li {
+  list-style: none;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+.actions {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+.actions svg {
+  width: 25px;
+  height: 25px;
+  margin: 10px 0 10px 10px;
+  transition: all 0.3s;
+}
+
+.actions svg.active {
+  fill: blueviolet;
+  transform: scale(1.1);
+}
+
+.actions ol.colorPicks {
+  position: fixed;
+  top: 50px;
+  left: 10px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.actions ol.colorPicks li {
+  float: left;
+  margin: 7px 10px;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.actions ol.colorPicks li.active {
+  box-shadow: 0 0 5px rgba(8, 8, 8, 1);
+  transform: scale(1.2);
+}
+
+.actions ol.colorPicks li:nth-child(1) {
+  background: black;
+}
+.actions ol.colorPicks li:nth-child(2) {
+  background: wheat;
+}
+.actions ol.colorPicks li:nth-child(3) {
+  background: red;
+}
+.actions ol.colorPicks li:nth-child(4) {
+  background: yellow;
+}
+.actions ol.colorPicks li:nth-child(5) {
+  background: pink;
+}
+.actions ol.colorPicks li:nth-child(6) {
+  background: blue;
+}
+.actions ol.colorPicks li:nth-child(7) {
+  background: green;
+}
+.actions ol.colorPicks li:nth-child(8) {
+  background: purple;
+}
+
+.actions ol.weightPicks {
+  position: fixed;
+  top: 90px;
+  left: 10px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.actions ol.weightPicks li {
+  width: 0px;
+  height: 20px;
+  float: left;
+  margin: 5px 10px;
+  transition: all 0.3s;
+}
+.actions ol.weightPicks li.active {
+  transform: scale(1.1);
+  box-shadow: 0 0 5px rgba(8, 8, 8, 1)
+}
+.actions ol.weightPicks li:nth-child(1) {
+  border-left: 1px solid;
+}
+.actions ol.weightPicks li:nth-child(2) {
+  border-left: 2px solid;
+}
+.actions ol.weightPicks li:nth-child(3) {
+  border-left: 3px solid;
+}
+.actions ol.weightPicks li:nth-child(4) {
+  border-left: 4px solid;
+}
+.actions ol.weightPicks li:nth-child(5) {
+  border-left: 5px solid;
+}

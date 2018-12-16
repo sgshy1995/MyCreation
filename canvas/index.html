@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas画板</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <canvas id="xxx" width="300" height="300"></canvas>
+    <div id="actions" class="actions">
+      <svg id="pen" class="icon active" aria-hidden="true">
+        <use xlink:href="#icon-pen"></use>
+      </svg>
+      <svg id="eraser" class="icon" aria-hidden="true">
+        <use xlink:href="#icon-Eraser-Tool"></use>
+      </svg>
+      <ol class="colorPicks clearfix">
+        <li id="black" class="black active"></li>
+        <li id="wheat" class="wheat"></li>
+        <li id="red" class="red"></li>
+        <li id="yellow" class="yellow"></li>
+        <li id="pink" class="pink"></li>
+        <li id="blue" class="blue"></li>
+        <li id="green" class="green"></li>
+        <li id="purple" class="purple"></li>
+      </ol>
+      <ol class="weightPicks clearfix">
+        <li id="weightOne" class="weightOne"></li>
+        <li id="weightTwo" class="weightTwo"></li>
+        <li id="weightThree" class="weightThree active"></li>
+        <li id="weightFour" class="weightFour"></li>
+        <li id="weightFive" class="weightFive"></li>
+      </ol>
+    </div>
+    <script src="./main.js"></script>
+    <script src="//at.alicdn.com/t/font_968293_q7p2cdc7tw.js"></script>
+  </body>
+</html>
