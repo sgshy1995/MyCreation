@@ -1,6 +1,7 @@
 #xxx {
   background: white;
   display: block;
+  overflow: hidden; /*禁止滚动条*/
   position: fixed;
   top: 0;
   left: 0;
@@ -14,6 +15,9 @@
 body {
   margin: 0px;
   overflow: hidden; /*禁止滚动条*/
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 ol,
