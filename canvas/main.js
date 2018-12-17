@@ -1,3 +1,8 @@
+//触屏设备禁止拖动
+/*document.body.ontouchstart = function(bbb) {
+  bbb.preventDefault();
+};*/
+
 var yyy = document.getElementById("xxx");
 var context = yyy.getContext("2d");
 var lineWidth = 3;
@@ -16,6 +21,18 @@ eraser.onclick = function() {
   eraserEnabled = true;
   eraser.classList.add("active");
   pen.classList.remove("active");
+};
+clear.onclick = function() {
+  context.clearRect(0, 0, yyy.width, yyy.height);
+};
+save.onclick = function() {
+  var url = yyy.toDataURL("image/png");
+  var a = document.createElement("a");
+  document.body.appendChild(a);
+  a.href = url;
+  a.download = "My Drawing";
+  a.target = "_blank";
+  a.click();
 };
 
 red.onclick = function() {
